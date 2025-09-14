@@ -239,19 +239,19 @@ const Home = () => {
   return (
     <div className="w-screen flex flex-col justify-center">
       <DescriptionContainer />
-      <div className="divider"></div>
+      <div className="divider text-amber-950"></div>
       <TechStack />
-      <div className="divider"></div>
+      <div className="divider text-amber-950"></div>
       <Projects projectsInfo={projectsInfo} />
-      <div className="divider"></div>
+      <div className="divider text-amber-950"></div>
       <Eduction EducationInfo={EducationInfo} />
-      <div className="divider"></div>
+      <div className="divider text-amber-950"></div>
       <Experience experience={experience} />
-      <div className="divider"></div>
+      <div className="divider text-amber-950"></div>
       <Certifications courses={courses} />
-      <div className="divider"></div>
+      <div className="divider text-amber-950"></div>
       <LeetCodeStreak />
-      <div className="divider"></div>
+      <div className="divider text-amber-950"></div>
       <ContactMe />
     </div>
   );

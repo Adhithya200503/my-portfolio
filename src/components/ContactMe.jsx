@@ -65,43 +65,43 @@ const ContactMe = () => {
           >
             <legend className="fieldset-legend text-amber-950">Via Gmail</legend>
 
-            <label className="label">Name</label>
+            <label className="label text-amber-950">Name</label>
             <input
               type="text"
               name="name"
-              className="input bg-amber-200"
+              className="input bg-amber-200 text-amber-950"
               placeholder="eg. Adhi"
               value={formData.name}
               onChange={handleChange}
               required
             />
 
-            <label className="label">Phone</label>
+            <label className="label text-amber-950">Phone</label>
             <input
               type="tel"
               name="phone"
-              className="input bg-amber-200"
+              className="input bg-amber-200 text-amber-950"
               placeholder="eg. 1234567890"
               value={formData.phone}
               onChange={handleChange}
             />
-            <p>(optional)</p>
+            <p className="text-amber-950">(optional)</p>
 
-            <label className="label">Gmail id</label>
+            <label className="label text-amber-950">Gmail id</label>
             <input
               type="email"
               name="email"
-              className="input bg-amber-200"
+              className="input bg-amber-200 text-amber-950"
               placeholder="eg. adhi@gmail.com"
               value={formData.email}
               onChange={handleChange}
               required
             />
 
-            <label className="label">Message</label>
+            <label className="label text-amber-950">Message</label>
             <textarea
               name="message"
-              className="textarea w-[300px] sm:w-[500px] md:w-[600px] bg-amber-200"
+              className="textarea w-[300px] sm:w-[500px] md:w-[600px] bg-amber-200 text-amber-950"
               placeholder="write a message ..."
               value={formData.message}
               onChange={handleChange}

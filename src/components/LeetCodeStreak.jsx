@@ -39,43 +39,43 @@ const LeetCodeStreak = () => {
   return (
     <div className="flex flex-col gap-1 justify-center items-center">
       <h1 className="mb-10 font-extrabold text-2xl text-amber-950 underline decoration-2 decoration-amber-400">My LeetCode Streak</h1>
-      <span>Total Problems Solved {leetCodeData.totalSolved} / {leetCodeData.totalQuestions}</span>
-      <span>Rank {leetCodeData.ranking}</span>
+      <span className="text-amber-950">Total Problems Solved {leetCodeData.totalSolved} / {leetCodeData.totalQuestions}</span>
+      <span className="text-amber-950">Rank {leetCodeData.ranking}</span>
       <div className="flex gap-4 mt-10">
         <div className="text-center">
           <div
-            className="radial-progress bg-amber-500 text-amber-950-content"
+            className="radial-progress bg-amber-500 text-amber-950 text-amber-950-content"
             style={{ "--value": easyPercent }}
             aria-valuenow={easyPercent}
             role="progressbar"
           >
             {easyPercent}%
           </div>
-          <p>Easy</p>
+          <p className="text-amber-950">Easy</p>
         </div>
 
         <div className="text-center">
           <div
-            className="radial-progress bg-green-500 text-green-950-content"
+            className="radial-progress bg-green-500 text-amber-950 text-green-950-content"
             style={{ "--value": mediumPercent }}
             aria-valuenow={mediumPercent}
             role="progressbar"
           >
             {mediumPercent}%
           </div>
-          <p>Medium</p>
+          <p className="text-amber-950">Medium</p>
         </div>
 
         <div className="text-center">
           <div
-            className="radial-progress bg-red-500 text-red-950-content"
+            className="radial-progress bg-red-500 text-amber-950 text-red-950-content"
             style={{ "--value": hardPercent }}
             aria-valuenow={hardPercent}
             role="progressbar"
           >
             {hardPercent}%
           </div>
-          <p>Hard</p>
+          <p className="text-amber-950">Hard</p>
         </div>
       </div>
       <button className="btn mb-10 mt-10 bg-amber-500 text-amber-950 rounded-4xl" onClick={()=>{window.open("https://leetcode.com/u/user4836F/","_blank")}}>View My Leet Code Profile</button>

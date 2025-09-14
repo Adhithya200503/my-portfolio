@@ -8,7 +8,7 @@ const ProjectContainer = ({ projectInfo }) => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="w-[80%]  mx-auto mt-5 flex flex-col justify-start gap-5 my-5">
+      <div className="w-[80%]  mx-auto mt-5 flex flex-col justify-start gap-5 my-5 ">
         <IoArrowBackCircle
           className="text-4xl text-amber-950"
           onClick={() => navigate(-1)}
@@ -17,15 +17,15 @@ const ProjectContainer = ({ projectInfo }) => {
           <span className="text-2xl font-bold text-amber-950">
             {projectInfo?.projectName}
           </span>
-          <p>{projectInfo.description}</p>
+          <p className="text-amber-950">{projectInfo.description}</p>
         </div>
         <div className="flex flex-col gap-2">
-          <span className="text-xl">Tech Stack</span>
+          <span className="text-xl text-amber-950">Tech Stack</span>
           <div className="flex gap-2">
             {projectInfo.techStack.map((tech, idx) => {
               return (
                 <div
-                  className="badge badge-outline bg-amber-500 text-amber-950  gap-2"
+                  className="badge badge-outline bg-amber-500 text-amber-950 dark:text-amber-950  gap-2"
                   key={idx}
                 >
                   {tech}
@@ -58,7 +58,7 @@ const ProjectContainer = ({ projectInfo }) => {
             ""
           ) : (
             <button
-              className="btn bg-amber-500 text-amber-950"
+              className="btn bg-amber-500 text-amber-950 dark:text-amber-950"
               onClick={() => {
                 window.open(projectInfo.liveDemo);
               }}
@@ -78,18 +78,18 @@ const ProjectContainer = ({ projectInfo }) => {
           </button>
         </div>
         <div className="flex flex-col gap-2">
-          <span className="text-xl">Features</span>
+          <span className="text-xl text-amber-950">Features</span>
           <ul>
             {projectInfo.features.map((feature, idx) => {
-              return <li key={idx}>{`${idx + 1}.)  ${feature}`}</li>;
+              return <li className="text-amber-950" key={idx}>{`${idx + 1}.)  ${feature}`}</li>;
             })}
           </ul>
         </div>
         <div className="flex flex-col gap-2">
-          <span className="text-xl">Challenges</span>
+          <span className="text-xl text-amber-950">Challenges</span>
           <ul>
             {projectInfo.challenges.map((challenge, idx) => {
-              return <li key={idx}>{`${idx + 1}.)  ${challenge}`}</li>;
+              return <li className="text-amber-950" key={idx}>{`${idx + 1}.)  ${challenge}`}</li>;
             })}
           </ul>
         </div>
@@ -97,7 +97,7 @@ const ProjectContainer = ({ projectInfo }) => {
           ""
         ) : (
           <div>
-            <span className="text-xl mb-2.5">Contributors</span>
+            <span className="text-xl mb-2.5 text-amber-950">Contributors</span>
             <div>
               <div className="flex flex-col min-h-[30vh] justify-around">
                 {projectInfo.contributors.map((contributors, idx) => {
@@ -109,8 +109,8 @@ const ProjectContainer = ({ projectInfo }) => {
                         </div>
                       </div>
                       <div>
-                        <p>{contributors.role}</p>
-                        <p>{contributors.name}</p>
+                        <p className="text-amber-950">{contributors.role}</p>
+                        <p className="text-amber-950">{contributors.name}</p>
                       </div>
                     </div>
                   );

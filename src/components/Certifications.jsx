@@ -16,10 +16,10 @@ const Certifications = ({courses}) => {
           return (
             <div className="card w-[350px] sm:w-[600px]  card-lg shadow-md" key={course.id}>
               <div className="card-body ">
-                <h2 className="card-title">{course.name}</h2>
-                <p>{course.platform}</p>
-                <p>{course.provider}</p>
-                <p>Expiry Date {" "}{course.expiryDate}</p>
+                <h2 className="card-title text-amber-950">{course.name}</h2>
+                <p className="text-amber-950">{course.platform}</p>
+                <p className="text-amber-950">{course.provider}</p>
+                <p className="text-amber-950">Expiry Date {" "}{course.expiryDate}</p>
                 <div className="flex flex-col sm:flex-row gap-2">
                   {course.learnedTopics.map((topic , idx) => {
                     return (

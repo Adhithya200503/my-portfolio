@@ -17,10 +17,10 @@ const Experience = ({experience}) => {
               key={idx}
             >
               <div className="card-body">
-                <h2 className="card-title">{exp.role}</h2>
-                <p>{exp.company}</p>
-                <p>{exp.description}</p>
-                <p>{exp.duration}</p>
+                <h2 className="card-title text-amber-950">{exp.role}</h2>
+                <p className="text-amber-950">{exp.company}</p>
+                <p className="text-amber-950">{exp.description}</p>
+                <p className="text-amber-950">{exp.duration}</p>
                 <div className="flex flex-col sm:flex-row gap-2">
                   {exp.technologies.map((tech, idx) => {
                     return (

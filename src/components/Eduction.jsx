@@ -62,11 +62,11 @@ const Eduction = ({EducationInfo}) => {
             </h2>
             <p className="text-gray-600">{educationData.description}</p>
             <div className="mt-4 space-y-2">
-              <p>
+              <p className="text-amber-950">
                 <strong>Marks:</strong> {educationData.marks}
               </p>
-              <p>
-                <strong>Location:</strong>{" "}
+              <p className="text-amber-950">
+                <strong >Location:</strong>{" "}
                 {educationData.location || "Not specified"}
               </p>
             </div>
