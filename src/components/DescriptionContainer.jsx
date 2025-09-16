@@ -40,8 +40,7 @@ const DescriptionContainer = () => {
               );
             }}
           >
-            <LiaDownloadSolid />
-            Download Resume
+          <LiaDownloadSolid /> Download Resume
           </button>
         </div>
         <img

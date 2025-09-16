@@ -12,7 +12,7 @@ const Projects = ({projectsInfo}) => {
       <div className="flex justify-center gap-4 flex-wrap">
         {projectsInfo.map((projectInfo, idx) => {
           return (
-            <div className="card w-80 shadow-sm" key={idx}>
+            <div className="w-80 shadow-sm" key={idx}>
               <figure>
                 <img src={projectInfo.screenshots[0]} alt="Shoes" />
               </figure>
