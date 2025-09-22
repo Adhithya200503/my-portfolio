@@ -1,6 +1,6 @@
 import React from "react";
 import { FaReact, FaPython, FaLinux, FaGithub } from "react-icons/fa";
-import { SiExpress, SiShadcnui, SiDaisyui } from "react-icons/si";
+import { SiExpress, SiShadcnui, SiDaisyui, SiN8N } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { DiMysql } from "react-icons/di";
 import { BiLogoMongodb } from "react-icons/bi";
@@ -13,6 +13,7 @@ const skills = [
   { name: "MySQL", icon: <DiMysql /> },
   { name: "MongoDB", icon: <BiLogoMongodb /> },
   { name: "Linux", icon: <FaLinux /> },
+  { name: "n8n", icon: <SiN8N /> },
   { name: "GitHub", icon: <FaGithub /> },
   { name: "Shadcn", icon: <SiShadcnui /> },
   { name: "DaisyUI", icon: <SiDaisyui /> },

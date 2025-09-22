@@ -77,7 +77,7 @@ const Home = () => {
         "I didn’t face major problems because I mainly used the Gemini API key, but I spent extra time searching for a free API key.",
       ],
       contributors: [],
-      url: "/detail/2",
+      
     },
     {
       id: "3",
@@ -115,7 +115,39 @@ const Home = () => {
       ],
 
       contributors: [],
-      url: "/detail/3",
+     
+    },
+    {
+      id: "4",
+      projectName: "Automated Employee Selection with n8n",
+      tagline: "From Applications to Selection — Automatically",
+      techStack: ["n8n"],
+      description:
+        "Automated Employee Selection with n8n is a workflow-based system that streamlines the recruitment process by automatically analyzing resumes, storing applicant data in Google Sheets, generating AI-driven insights, notifying HR with detailed reports, and sending personalized responses to applicants, thereby reducing manual effort, saving time, and ensuring a faster and more consistent hiring experience.",
+      features: [
+        "Automatically analyzes resumes submitted through the job application form.",
+        "Extracts applicant details and stores them in Google Sheets for easy tracking.",
+        "Uses AI models to generate insights and evaluation messages about each candidate.",
+        "Sends automated email notifications to HR with applicant analysis reports.",
+        "Sends personalized responses to applicants based on their application status.",
+        "Updates or appends applicant records in Google Sheets to maintain accurate data.",
+        "Reduces manual effort and speeds up the recruitment process with end-to-end automation.",
+      ],
+
+      screenshots: [
+        "https://res.cloudinary.com/datvfcnme/image/upload/v1758546394/Screenshot_571_pvwws2.png",
+      ],
+      liveDemo: "",
+      githubRepo: "",
+      challenges: [
+        "Faced initial difficulties in configuring n8n workflows for resume parsing and email automation.",
+        "Spent extra time testing different nodes to ensure proper data flow between form submissions, Google Sheets, and email services.",
+        "Had to fine-tune the AI model prompts to generate clear and useful applicant insights.",
+        "Encountered challenges in handling edge cases like incomplete resumes or missing form fields.",
+      ],
+
+      contributors: [],
+      
     },
   ];
   const EducationInfo = [

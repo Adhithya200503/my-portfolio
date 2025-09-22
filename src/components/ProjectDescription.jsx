@@ -67,21 +67,29 @@ const ProjectContainer = ({ projectInfo }) => {
               Live Preview
             </button>
           )}
-          <button
-            className="btn bg-amber-500 text-amber-950"
-            onClick={() => {
-              window.open(projectInfo.githubRepo);
-            }}
-          >
-            <IoCodeSlash />
-            Source Code
-          </button>
+          {projectInfo.githubRepo ? (
+            <button
+              className="btn bg-amber-500 text-amber-950"
+              onClick={() => {
+                window.open(projectInfo.githubRepo);
+              }}
+            >
+              <IoCodeSlash />
+              Source Code
+            </button>
+          ) : (
+            ""
+          )}
         </div>
         <div className="flex flex-col gap-2">
           <span className="text-xl text-amber-950">Features</span>
           <ul>
             {projectInfo.features.map((feature, idx) => {
-              return <li className="text-amber-950" key={idx}>{`${idx + 1}.)  ${feature}`}</li>;
+              return (
+                <li className="text-amber-950" key={idx}>{`${
+                  idx + 1
+                }.)  ${feature}`}</li>
+              );
             })}
           </ul>
         </div>
@@ -89,7 +97,11 @@ const ProjectContainer = ({ projectInfo }) => {
           <span className="text-xl text-amber-950">Challenges</span>
           <ul>
             {projectInfo.challenges.map((challenge, idx) => {
-              return <li className="text-amber-950" key={idx}>{`${idx + 1}.)  ${challenge}`}</li>;
+              return (
+                <li className="text-amber-950" key={idx}>{`${
+                  idx + 1
+                }.)  ${challenge}`}</li>
+              );
             })}
           </ul>
         </div>
